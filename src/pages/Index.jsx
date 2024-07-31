@@ -1,9 +1,11 @@
 import React from 'react';
+import Layout from '../components/Layout';
 import { Great_Wall, Terracotta_Army, Forbidden_City, Chinese_Food } from '../components/ChinaComponents';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-red-50 text-gray-800 p-8">
+    <Layout>
+      <div className="bg-red-50 text-gray-800 p-8">
       <header className="text-center mb-12">
         <h1 className="text-4xl font-bold text-red-800 mb-4">Discover China</h1>
         <p className="text-xl">Experience the wonders of an ancient civilization</p>
@@ -36,7 +38,8 @@ const Index = () => {
           </button>
         </section>
       </main>
-    </div>
+      </div>
+    </Layout>
   );
 };
 
